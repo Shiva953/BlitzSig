@@ -9,18 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@solana/actions": "^1.4.0",
+    "@solana/web3.js": "^1.95.2",
+    "@sqds/multisig": "^2.1.2",
+    "@sqds/sdk": "^2.0.4",
+    "bn.js": "^5.2.1",
+    "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.5"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "typescript": "^5"
   }
 }
