@@ -16,9 +16,7 @@ import {
     SystemProgram,
     Transaction,
   } from "@solana/web3.js";
-  import * as multisig from '@sqds/multisig';
-  import Squads,{SquadsMethods, Wallet, getAuthorityPDA} from "@sqds/sdk";
-  import {BN} from "bn.js"
+  import * as multisig from '../../../../../node_modules/@sqds/multisig';
 
   export const GET = async (req: Request) => {
     try {
