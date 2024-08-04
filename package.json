@@ -12,7 +12,6 @@
     "@solana/actions": "^1.4.0",
     "@solana/web3.js": "^1.95.2",
     "@sqds/multisig": "^2.1.2",
-    "@sqds/sdk": "^2.0.4",
     "bn.js": "^5.2.1",
     "next": "14.2.5",
     "react": "^18",
