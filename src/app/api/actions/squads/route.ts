@@ -16,8 +16,8 @@ import {
     SystemProgram,
     Transaction,
   } from "@solana/web3.js";
-  import * as multisig from '/Users/shivaseth/Desktop/Technology/WEB3/squads-blink/node_modules/@sqds/multisig';
-  import Squads,{SquadsMethods, Wallet, getAuthorityPDA, DEFAULT_MULTISIG_PROGRAM_ID} from "@sqds/sdk";
+  import * as multisig from '@sqds/multisig';
+  import Squads,{SquadsMethods, Wallet, getAuthorityPDA} from "@sqds/sdk";
   import {BN} from "bn.js"
 
   export const GET = async (req: Request) => {
@@ -148,7 +148,10 @@ import {
             rentCollector: null,
       })
       
-      const [vault] = getAuthorityPDA(multisigPda, new BN(1), new PublicKey("SQDS4ep65T869zMMBKyuUq6aD6EgTu8psMjkvj52pCf"));
+      const [vault] = multisig.getVaultPda({
+        multisigPda,
+        index: 0,
+      });
 
       //TXN FOR MULTISIG ACCOUNT CREATION
       transaction.add(ixn);
